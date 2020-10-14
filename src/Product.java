@@ -41,4 +41,8 @@ public class Product {
     public int getId() {
         return id;
     }
+
+    public void print() {
+        System.out.printf("Name: %s(%d), Price: %d%n", name, id, price);
+    }
 }
