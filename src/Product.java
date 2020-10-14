@@ -5,6 +5,12 @@ public class Product {
     private String name;
     private int id;
 
+    public Product(int price, String name, int id) {
+        this.price = price;
+        setName(name);
+        setId(id);
+    }
+
     public int getPrice() {
         return price;
     }
@@ -25,7 +31,7 @@ public class Product {
         this.name = name;
     }
 
-    public void setId(int newId) {
+    private void setId(int newId) {
         // The database of products must have an ID that is positive
         if(newId > 0) {
             id = newId;
