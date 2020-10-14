@@ -2,15 +2,15 @@ public class Main {
     public static void main(String[] args) {
         Product sko = new Product();
         sko.setId(-123);
-        sko.price = 50;
-        sko.name = "Nike Zoom";
+        sko.setPrice(50);
+        sko.setName("Nike Zoom");
 
         Product jeans = new Product();
         jeans.setId(124);
-        jeans.price = 399;
-        jeans.name = "H&M Jeans";
+        jeans.setPrice(399);
+        jeans.setName("H&M Jeansaskldfsdfasdfsdafsdafsdfsdaffjslakdfaklsdjfasdfsadfasdfasdfsdafadsfksdfsdafsdfsdfsdfsdaflsadjfksdlfsdfsadfasdfsadfjaslkdjfklsdjf");
 
-        System.out.printf("%s Pris: %d (%d)%n", sko.name, sko.price, sko.getId());
-        System.out.printf("%s Pris: %d (%d)%n", jeans.name, jeans.price, jeans.getId());
+        System.out.printf("%s Pris: %d (%d)%n", sko.getName(), sko.getPrice(), sko.getId());
+        System.out.printf("%s Pris: %d (%d)%n", jeans.getName(), jeans.getPrice(), jeans.getId());
     }
 }

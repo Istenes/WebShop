@@ -1,7 +1,29 @@
 public class Product {
-    String name;
+    public final int NAME_MAX_LENGTH = 55;
+
+    private int price;
+    private String name;
     private int id;
-    int price;
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        if(name.length() >= NAME_MAX_LENGTH) {
+            name = name.substring(0, NAME_MAX_LENGTH);
+        }
+
+        this.name = name;
+    }
 
     public void setId(int newId) {
         // The database of products must have an ID that is positive
